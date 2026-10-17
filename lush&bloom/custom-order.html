@@ -1,11 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lush & Bloom | Custom Order</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../lush&bloom/lush&bloom/css/style.css">
 </head>
 <body>
-    
+
+ 
+  <nav class="navbar navbar-expand-lg" style="background-color: #f4c3ca;">
+    <div class="container d-flex justify-content-between align-items-center">
+      <a class="navbar-brand fw-bold" href="index.html">Lush & Bloom</a>
+      <ul class="nav">
+        <li class="nav-item"><a class="nav-link text-dark" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link text-dark" href="guide.html">Meaning Guide</a></li>
+        <li class="nav-item"><a class="nav-link text-dark" href="about.html">About Us</a></li>
+        <li class="nav-item"><a class="nav-link text-dark active fw-bold" href="custom-order.html">Custom Order</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  
+  <header class="py-5 text-center" style="background-color: #f7f3ee;">
+    <div class="container">
+      <h1 class="display-5 fw-bold">Design Your Custom Bouquet</h1>
+      <p class="text-muted fst-italic">Bespoke floral arrangements crafted with meaning in Doha, Qatar</p>
+    </div>
+  </header>
+
+  <main class="py-5">
+    <div class="container">
+      <div class="row justify-content-center">
+        
+        <div class="col-lg-8">
+          <div class="p-4 p-md-5 rounded-4 shadow-sm" style="background-color: #ffffff; border: 1px solid #f0e6e8;">
+            
+            <h3 class="mb-4 text-center" style="color: #2D3A29;">Order Details</h3>
+            
+            
+            <form >
+              
+              
+              <div class="row g-3 mb-3">
+                <div class="col-md-6">
+                  <label for="fullName" class="form-label fw-semibold">Full Name</label>
+                  <input type="text" class="form-control rounded-pill" id="fullName" placeholder="Your name" required>
+                </div>
+                <div class="col-md-6">
+                  <label for="phoneNumber" class="form-label fw-semibold">Phone Number (JORDAN)</label>
+                  <input type="tel" class="form-control rounded-pill" id="phoneNumber" placeholder="+962 5555 1234" required>
+                </div>
+              </div>
+
+
+              
+              <div class="row g-3 mb-3">
+                <div class="col-md-6">
+                  <label for="occasionSelect" class="form-label fw-semibold">Occasion</label>
+                  <select class="form-select rounded-pill" id="occasionSelect" required>
+                    <option value="" selected disabled>Select the occasion</option>
+                    <option value="birthday">Birthday Celebration</option>
+                    <option value="anniversary">Anniversary</option>
+                    <option value="graduation">Graduation</option>
+                    <option value="gratitude">Gratitude & Thank You</option>
+                    <option value="apology">Sincere Apology</option>
+                    <option value="getwell">Get Well Soon & Wellness</option>
+                  </select>
+                </div>
+
+
+             <div class="mb-3">
+            <label for="bouquetChoice" class="form-label fw-semibold">Choose Your Bouquet</label>
+            <select class="form-select rounded-pill" id="bouquetChoice" required>
+            <option value="" selected disabled>Select a bouquet option</option>
+            <option value="after-the-rain">After The Rain Bouquet (15 JD / Peace & Gratitude)</option>
+            <option value="meadow-whisper">Meadow Whisper Bouquet (18 JD / Love & Rebirth)</option>
+            <option value="forest-tales">Forest Tales Bouquet (22 JD / Warmth & Connection)</option>
+            <option value="custom">Bespoke Custom Arrangement (Created from scratch)</option>
+            </select>
+            </div>
+
+
+
+                <div class="col-md-6">
+                  <label for="citySelect" class="form-label fw-semibold">Delivery Area</label>
+                  <select class="form-select rounded-pill" id="citySelect" required>
+                    <option value="" selected disabled>Choose delivery area</option>
+                    <option value="doha">Amman</option>
+                    <option value="lusail">Irbid</option>
+                    <option value="pearl">ALzarqa</option>
+                    <option value="alwakrah">Aqapa</option>
+                    <option value="alrayyan">Jarash</option>
+                  </select>
+                </div>
+              </div>
+
+
+              <div class="row g-3 mb-3">
+                <div class="col-md-6">
+                  <label for="deliveryDate" class="form-label fw-semibold">Delivery Date</label>
+                  <input type="date" class="form-control rounded-pill" id="deliveryDate" required>
+                </div>
+                <div class="col-md-6">
+                  <label for="deliveryTime" class="form-label fw-semibold">Preferred Time</label>
+                  <select class="form-select rounded-pill" id="deliveryTime" required>
+                    <option value="morning">Morning (9:00 AM - 1:00 PM)</option>
+                    <option value="evening" selected>Evening (4:00 PM - 9:00 PM)</option>
+                  </select>
+                </div>
+              </div>
+
+              
+              <div class="mb-3">
+                <label for="cardMessage" class="form-label fw-semibold">Complimentary Greeting Card Message</label>
+                <textarea class="form-control rounded-3" id="cardMessage" rows="4" placeholder="Write your heartfelt message here to be handwritten on our luxury parchment card..."></textarea>
+                <div class="form-text">We handwrite every message with vintage calligraphy.</div>
+              </div>
+
+              
+              <div class="mb-4">
+                <label for="specialNotes" class="form-label fw-semibold">Special Herbal & Flower Preferences</label>
+                <input type="text" class="form-control rounded-pill" id="specialNotes" placeholder="e.g., Include fresh lavender, no baby's breath, etc.">
+              </div>
+
+              
+              <div class="text-center mt-4">
+                <button type="submit" class="btn btn-custom-pill px-5 py-2 fw-semibold">Confirm & Place Order</button>
+              </div>
+
+            </form>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  
+  <footer class="py-5 text-white" style="background-color: #2D3A29;">
+    <div class="container">
+      <div class="row gy-4">
+        <div class="col-md-6">
+          <h5 style="color: #f4c3ca;">Lush & Bloom</h5>
+          <p class="small text-white-50">Flora & Tales — Amman , JORDAN</p>
+          <p class="small text-white-50">
+            A boutique floral and herbal studio translating sentiments into meaningful natural designs.
+          </p>
+        </div>
+
+        <div class="col-md-6 text-md-end">
+          <h6 style="color: #f4c3ca;">Quick Links</h6>
+          <ul class="list-unstyled small">
+            <li><a href="index.html" class="text-white text-decoration-none">Home</a></li>
+            <li><a href="guide.html" class="text-white text-decoration-none">Meaning Guide</a></li>
+            <li><a href="about.html" class="text-white text-decoration-none">About Us</a></li>
+            <li><a href="custom-order.html" class="text-white text-decoration-none">Custom Order</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <hr class="border-secondary my-4">
+
+      <div class="text-center small text-white-50">
+        &copy; 2026 Lush & Bloom . All rights reserved.
+      </div>
+    </div>
+  </footer>
+
 </body>
 </html>
